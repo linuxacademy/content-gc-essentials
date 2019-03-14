@@ -1,0 +1,34 @@
+.media:first-child {
+	margin-top: 15px;
+}
+.header {
+	background-color: #db4c3f;
+	height: 160px;
+	display: flex;
+	align-items: center;
+}
+#la-logo {
+	padding-top: 25px
+}
+#musicgallery-logo {
+	background-image: url(/images/LA-MusicGallery-logo.png);
+	width: 330px;
+	height: 80px;
+	background-repeat: no-repeat;
+}
+#addAlbum {
+	text-align: right;
+	padding-top: 15px;
+}
+.media-body h4 {
+	color: #333;
+}
+.media-body p {
+	color: #666;
+}
+.outerMedia:hover,
+.outerMedia:hover h4,
+.outerMedia:hover p {
+	background-color: #db4c3f;
+	color: white;
+}

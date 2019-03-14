@@ -1,0 +1,4 @@
+Flask==0.11.1
+GoogleAppEngineCloudStorageClient==1.9.22.1
+gunicorn==19.6.0
+six==1.10.0
