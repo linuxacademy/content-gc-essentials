@@ -25,6 +25,10 @@ You can create and manage projects at https://console.developers.google.com
 # 'datastore' as it does not require any additional configuration.
 DATA_BACKEND = 'datastore'
 
+# Google Cloud Project ID. This can be found on the 'Overview' page at
+# https://console.developers.google.com
+PROJECT_ID = '[YOUR-PROJECT-ID]'
+
 # SQLAlchemy configuration
 # Replace user, pass, host, and database with the respective values of your
 # Cloud SQL instance.
@@ -44,6 +48,6 @@ SQLALCHEMY_DATABASE_URI = \
 #
 # You can adjust the max content length and allow extensions settings to allow
 # larger or more varied file types if desired.
-CLOUD_STORAGE_BUCKET = 'la-musicgallery-001'
+CLOUD_STORAGE_BUCKET = '[YOUR-BUCKET-NAME]'
 MAX_CONTENT_LENGTH = 8 * 1024 * 1024
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
