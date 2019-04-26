@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: rolling
+spec:
+  replicas: 5
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 5
+  template:
+    metadata:
+      labels:
+        app: rolling
+        track: stable
+    spec:
+      containers:
+        - name: rollingv1cd 
+          image: linuxacademycontent/content-gcp-labs:rolling-v1
+          ports:
+            - name: http
+              containerPort: 80
