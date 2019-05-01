@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: la-canary
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: la-app
+        track: canary
+        version: 1.0.0
+    spec:
+      containers:
+        - name: la-canary
+          image: linuxacademycontent/content-gcp-labs:canary
+          ports:
+            - name: http
+              containerPort: 80
