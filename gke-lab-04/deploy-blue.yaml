@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: la-stable
+spec:
+  replicas: 4
+  template:
+    metadata:
+      labels:
+        app: la-app
+        track: stable
+        version: 1.0.0
+    spec:
+      containers:
+        - name: la-stable
+          image: linuxacademycontent/content-gcp-labs:deploy-blue
+          ports:
+            - name: http
+              containerPort: 80
