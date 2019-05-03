@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: la-stable
-          image: linuxacademycontent/content-gcp-labs:stable
+          image: linuxacademycontent/content-gcp-labs:deploy-stable
           ports:
             - name: http
               containerPort: 80
