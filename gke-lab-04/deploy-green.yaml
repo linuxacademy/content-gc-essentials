@@ -1,19 +1,21 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: la-stable
+  name: la-green
 spec:
   replicas: 4
   template:
     metadata:
       labels:
         app: la-app
-        track: stable
         version: 2.0.0
     spec:
       containers:
-        - name: la-stable
+        - name: la-green
           image: linuxacademycontent/content-gcp-labs:deploy-green
           ports:
             - name: http
               containerPort: 80
+          resources:
+            limits:
+              memory: 100Mi
