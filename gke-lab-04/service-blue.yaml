@@ -3,6 +3,7 @@ apiVersion: v1
 metadata:
   name: la-service
 spec:
+  type: LoadBalancer
   selector:
     app: la-app
     version: 1.0.0
