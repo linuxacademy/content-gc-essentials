@@ -8,7 +8,6 @@
       "condition": {
         "age": 180,
         "matchesStorageClass": [
-          "REGIONAL",
           "STANDARD"
         ]
       }
