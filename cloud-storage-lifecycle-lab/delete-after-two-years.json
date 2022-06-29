@@ -6,7 +6,7 @@
         "type": "SetStorageClass"
       },
       "condition": {
-        "age": 180,
+        "age": 90,
         "matchesStorageClass": [
           "STANDARD"
         ]
@@ -18,13 +18,25 @@
         "type": "SetStorageClass"
       },
       "condition": {
-        "age": 365,
+        "age": 180,
         "matchesStorageClass": [
           "NEARLINE"
         ]
       }
     },
     {
+        "action": {
+          "storageClass": "ARCHIVE",
+          "type": "SetStorageClass"
+        },
+        "condition": {
+          "age": 180,
+          "matchesStorageClass": [
+            "COLDLINE"
+          ]
+        }
+      },
+      {
       "action": {
         "type": "Delete"
       },
