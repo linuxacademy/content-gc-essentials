@@ -30,7 +30,7 @@
           "type": "SetStorageClass"
         },
         "condition": {
-          "age": 180,
+          "age": 365,
           "matchesStorageClass": [
             "COLDLINE"
           ]
